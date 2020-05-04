@@ -23,8 +23,8 @@ with open("data/zipcode.csv","r") as f:
 
 
 parser = argparse.ArgumentParser(
-    prog = "argparse_sample",
-    description = "Samples")
+    prog = "weather",
+    description = "Grabs weather forecast from National Weather Service")
 parser.add_argument("zip_code", help="Zip code of the location you want to get")
 args = parser.parse_args()
 options = vars(args)
