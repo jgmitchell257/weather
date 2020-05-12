@@ -14,7 +14,7 @@ with open("data/zipcode.csv","r") as f:
             if len(clean_data[0]) == 3:
                 ZIPCODE = "00" + clean_data[0]
             if len(clean_data[0]) == 4:
-                ZIPCODE = "00" + clean_data[0]
+                ZIPCODE = "0" + clean_data[0]
             else:
                 ZIPCODE = clean_data[0]
             LATITUDE = clean_data[1]
